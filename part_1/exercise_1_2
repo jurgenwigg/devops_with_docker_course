@@ -1,0 +1,37 @@
+Script started on 2023-04-29 18:23:01+00:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="103" LINES="60"]
+[1m[7m%[27m[1m[0m                                                                                                       ]2;jurgen@x594:~]1;~]7;file://x594/home/jurgen[0m[27m[24m[J[32m[18:23:02][00m [22;36mjurgen [01;34m::[00m [33mx594[00m [22;35m ➜ [00m [32m~ [01;34m»[00m [K[?1h=[?2004hddocker ps -as[?1l>[?2004l
+]2;docker ps -as]1;dockerCONTAINER ID   IMAGE          COMMAND                  CREATED          STATUS                      PORTS     NAMES                SIZE
+1f2c0fcb57a8   nginx:latest   "/docker-entrypoint.…"   11 minutes ago   Exited (0) 10 minutes ago             nice_pascal          1.09kB (virtual 142MB)
+3412f70108fb   nginx:latest   "/docker-entrypoint.…"   11 minutes ago   Up 11 minutes               80/tcp    vigorous_antonelli   1.09kB (virtual 142MB)
+f32b2907508f   nginx:latest   "/docker-entrypoint.…"   11 minutes ago   Exited (0) 10 minutes ago             distracted_dirac     1.09kB (virtual 142MB)
+[1m[7m%[27m[1m[0m                                                                                                       ]2;jurgen@x594:~]1;~]7;file://x594/home/jurgen[0m[27m[24m[J[32m[18:23:12][00m [22;36mjurgen [01;34m::[00m [33mx594[00m [22;35m ➜ [00m [32m~ [01;34m»[00m [K[?1h=[?2004hddocker images[?1l>[?2004l
+]2;docker images]1;dockerREPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    6efc10a0510f   2 weeks ago   142MB
+[1m[7m%[27m[1m[0m                                                                                                       ]2;jurgen@x594:~]1;~]7;file://x594/home/jurgen[0m[27m[24m[J[32m[18:23:15][00m [22;36mjurgen [01;34m::[00m [33mx594[00m [22;35m ➜ [00m [32m~ [01;34m»[00m [K[?1h=[?2004hddocker stop 34[?1l>[?2004l
+]2;docker stop 34]1;docker34
+[1m[7m%[27m[1m[0m                                                                                                       ]2;jurgen@x594:~]1;~]7;file://x594/home/jurgen[0m[27m[24m[J[32m[18:23:27][00m [22;36mjurgen [01;34m::[00m [33mx594[00m [22;35m ➜ [00m [32m~ [01;34m»[00m [K[?1h=[?2004hddocker container prune[?1l>[?2004l
+]2;docker container prune]1;dockerWARNING! This will remove all stopped containers.
+Are you sure you want to continue? [y/N] y
+Deleted Containers:
+1f2c0fcb57a8c59c734d3339a1d672fbd616ed0f4ce6e3166a71d21e787897c0
+3412f70108fb194bfdfbc305cf075f6b3367568d28085ceb4cc078f53c7d7841
+f32b2907508ffbfbbf8291b89fa634988615577846a9df5dddb972dde9fdce98
+
+Total reclaimed space: 3.279kB
+[1m[7m%[27m[1m[0m                                                                                                       ]2;jurgen@x594:~]1;~]7;file://x594/home/jurgen[0m[27m[24m[J[32m[18:23:42][00m [22;36mjurgen [01;34m::[00m [33mx594[00m [22;35m ➜ [00m [32m~ [01;34m»[00m [K[?1h=[?2004hddocker image rm ngins x:latest[?1l>[?2004l
+]2;docker image rm nginx:latest]1;dockerUntagged: nginx:latest
+Untagged: nginx@sha256:63b44e8ddb83d5dd8020327c1f40436e37a6fffd3ef2498a6204df23be6e7e94
+Deleted: sha256:6efc10a0510f143a90b69dc564a914574973223e88418d65c1f8809e08dc0a1f
+Deleted: sha256:a489ce38666d5aff5d73930d115381b154a503b48c5534357d5183160f5b9bfa
+Deleted: sha256:ce2a611250a8bb55b73959de5865489d566bf48e1342c74b46b107e9a224370e
+Deleted: sha256:fa6c51798227fd451cc3ff628c46c1b62c0d1d08e43374be7000c78ad910c0c0
+Deleted: sha256:c426467d564c8684df87356eb045dc50d8b5af9521e9775c1b6bb941135680de
+Deleted: sha256:c6deada06ccd386201e5b95c38e19297cd3eeb5264d6413d9cc7441020816401
+Deleted: sha256:ed7b0ef3bf5bbec74379c3ae3d5339e666a314223e863c70644f7522a7527461
+[1m[7m%[27m[1m[0m                                                                                                       ]2;jurgen@x594:~]1;~]7;file://x594/home/jurgen[0m[27m[24m[J[32m[18:23:55][00m [22;36mjurgen [01;34m::[00m [33mx594[00m [22;35m ➜ [00m [32m~ [01;34m»[00m [K[?1h=[?2004hddocker ps -as[?1l>[?2004l
+]2;docker ps -as]1;dockerCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES     SIZE
+[1m[7m%[27m[1m[0m                                                                                                       ]2;jurgen@x594:~]1;~]7;file://x594/home/jurgen[0m[27m[24m[J[32m[18:24:01][00m [22;36mjurgen [01;34m::[00m [33mx594[00m [22;35m ➜ [00m [32m~ [01;34m»[00m [K[?1h=[?2004hddocker images[?1l>[?2004l
+]2;docker images]1;dockerREPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+[1m[7m%[27m[1m[0m                                                                                                       ]2;jurgen@x594:~]1;~]7;file://x594/home/jurgen[0m[27m[24m[J[32m[18:24:05][00m [22;36mjurgen [01;34m::[00m [33mx594[00m [22;35m ➜ [00m [32m~ [01;34m»[00m [K[?1h=[?2004heexit[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2023-04-29 18:24:07+00:00 [COMMAND_EXIT_CODE="0"]
