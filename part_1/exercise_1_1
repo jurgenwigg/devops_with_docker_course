@@ -1,0 +1,10 @@
+Script started on 2023-04-29 18:16:14+00:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="83" LINES="51"]
+[1m[7m%[27m[1m[0m                                                                                   ]2;jurgen@x594:~/GitHub/devops_with_docker_course/part_1]1;..course/part_1]7;file://x594/home/jurgen/GitHub/devops_with_docker_course/part_1[0m[27m[24m[J[32m[18:16:14][00m [22;36mjurgen [01;34m::[00m [33mx594[00m [22;35m ➜ [00m [32mGitHub/devops_with_docker_course/part_1 [31m‹main*› [00m[01;34m»[00m [K[?1h=[?2004hssud [Koo docker ps -a[?1l>[?2004l
+]2;sudo docker ps -a]1;docker[sudo] password for jurgen: 
+CONTAINER ID   IMAGE          COMMAND                  CREATED         STATUS                     PORTS     NAMES
+1f2c0fcb57a8   nginx:latest   "/docker-entrypoint.…"   4 minutes ago   Exited (0) 4 minutes ago             nice_pascal
+3412f70108fb   nginx:latest   "/docker-entrypoint.…"   4 minutes ago   Up 4 minutes               80/tcp    vigorous_antonelli
+f32b2907508f   nginx:latest   "/docker-entrypoint.…"   5 minutes ago   Exited (0) 3 minutes ago             distracted_dirac
+[1m[7m%[27m[1m[0m                                                                                   ]2;jurgen@x594:~/GitHub/devops_with_docker_course/part_1]1;..course/part_1]7;file://x594/home/jurgen/GitHub/devops_with_docker_course/part_1[0m[27m[24m[J[32m[18:16:23][00m [22;36mjurgen [01;34m::[00m [33mx594[00m [22;35m ➜ [00m [32mGitHub/devops_with_docker_course/part_1 [31m‹main*› [00m[01;34m»[00m [K[?1h=[?2004heexi [Kt[?1l>[?2004l
+]2;exit]1;exit
+Script done on 2023-04-29 18:16:24+00:00 [COMMAND_EXIT_CODE="0"]
