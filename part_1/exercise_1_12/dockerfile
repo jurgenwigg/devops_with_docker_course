@@ -1,0 +1,22 @@
+FROM node:16.3.0-alpine
+
+# Expose 5000 port
+EXPOSE 5000
+
+# Set workdir
+WORKDIR /usr/src/app
+
+# Copy source code
+COPY . .
+
+# Install all packages
+RUN npm install
+
+# Build the app
+RUN npm run build
+
+# Install needed package to serve the app
+RUN npm install -g serve
+
+# Start server on port 5000
+ENTRYPOINT serve -s -l 5000 build
