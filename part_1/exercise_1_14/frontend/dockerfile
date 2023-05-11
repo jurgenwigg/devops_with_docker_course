@@ -1,0 +1,25 @@
+FROM node:16.3.0-alpine
+
+# Expose 5000 port
+EXPOSE 8080
+
+# Set workdir
+WORKDIR /usr/src/app
+
+# Set API URL
+ENV REACT_APP_BACKEND_URL=https://apinauka.bieda.it
+
+# Copy source code
+COPY . .
+
+# Install all packages
+RUN npm install
+
+# Build the app
+RUN npm run build
+
+# Install needed package to serve the app
+RUN npm install -g serve
+
+# Start server on port 8080
+ENTRYPOINT serve -s -l 8080 build
