@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+
+    simple_web_service:
+      image: devopsdockeruh/simple-web-service:ubuntu
+      build: .
+      command: server
+      ports:
+          - 80:8080
+      volumes:
+      - type: bind
+        source: ./text.log
+        target: /usr/src/app/text.log
+      container_name: simple_web_service
